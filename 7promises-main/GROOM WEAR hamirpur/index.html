@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HAMIRPUR - GROOM WEAR VENDORS</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body style="background: rgb(64,246,149);
+background: linear-gradient(72deg, rgba(64,246,149,1) 10%, rgba(65,182,215,1) 47%, rgba(0,195,153,1) 100%);">
+ <header class="head">
+    <img src="import.jpeg" class="my-logo"></img>
+           
+            <nav class="navbar ">
+                 <a href="index.html" class="active">Home</a>
+                <a href="index.html#service">Service</a>
+                <a href="index.html#vendor">Vendors</a>
+                <a href="index.html#invite">Card Design</a>
+                <a href="index.html#contact">Contact Us</a>
+            </nav>
+            <div id="menu-bar"><i class="fas fa-bars"></i></div>
+        </header>
+        <h2 style="text-align: center; font-family:monospace;margin-top:8%;font-size: 2.5vw;"> GROOM WEAR VENDORS - Hamirpur
+
+    </h2>
+    <div class="vendor">
+        <h2>Thakur Brothers</h2>
+        <img src="111.jpeg" alt="Vendor 1">
+        <p>Location: <span class="location">Bhota</span></p>
+        <p>Price: <span class="price">$500 - $1000</span></p>
+    </div>
+    <div class="vendor">
+        <h2 style>NIA Dress Collection</h2>
+        <img src="222.jpg" alt="Vendor 2">
+        <p>Location: <span class="location">Hamirpur</span></p>
+        <p>Price: <span class="price">$1000 - $1500</span></p>
+    </div>
+    <div class="vendor">
+        <h2>Ritik Dresses</h2>
+        <img src="333.jpg" alt="vendor3">
+        <p>Location: <span class="location">Nadaun</span></p>
+        <p>Price: <span class="price">$1500 - $2000</span></p>
+    </div>
+</body>
+<script>
+let menu = document.querySelector('#menu-bar');
+let head = document.querySelector('.head .navbar');
+
+menu.onclick = () => {
+    head.classList.toggle('active');
+};
+
+window.onscroll = () => {
+    head.classList.remove('active');
+    if (window.scrollY > 60) {
+        document.querySelector('#menu-bar').classList.add('active');
+    } else {
+        document.querySelector('#menu-bar').classList.remove('active');
+    }
+}</script>
+</html>

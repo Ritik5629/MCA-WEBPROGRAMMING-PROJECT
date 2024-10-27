@@ -1,0 +1,15 @@
+html {
+    /* min-height: 100px; */
+    /* width: 60px; */
+    /* background: url('2gif.gif') center center cover no-repeat fixed; */
+  }
+  
+  body {
+    /* margin: 0; */
+  }
+  .invitation{
+    height: 100px;
+    width: 70px;
+    padding-top: 20px;
+    padding-bottom: 400px;
+  }

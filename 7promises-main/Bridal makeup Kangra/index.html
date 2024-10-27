@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANGRA - Bridal Makeup Vendors</title>
+    
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body style="background: rgb(64,246,149);
+background: linear-gradient(72deg, rgba(64,246,149,1) 10%, rgba(65,182,215,1) 47%, rgba(0,195,153,1) 100%);">
+ <header class="head">
+    <img src="import.jpeg" class="my-logo"></img>
+           
+            <nav class="navbar ">
+                
+                <a href="index.html" class="active">Home</a>
+                <a href="index.html#service">Service</a>
+                <a href="index.html#vendor">Vendors</a>
+                <a href="index.html#invite">Card Design</a>
+                <a href="index.html#contact">Contact Us</a>
+            </nav>
+            <div id="menu-bar"><i class="fas fa-bars"></i></div>
+        </header>
+        <h2 style="text-align: center; font-family:monospace;margin-top:8%;font-size: 2.5vw;"> Bridal Makeup - Kangra
+
+    </h2>
+    <div class="main">
+    <div class="vendor">
+        <img src="66.webp" alt="Vendor 1">
+        <h2>Neha Beauty Parlor</h2>
+        <p>Rating: ★★★★☆</p>
+        <p>Price: $100 - $200</p>
+        <p>Location: Bhoranj </p>
+    </div>
+    <div class="vendor">
+        <img src="4444.jpg"Vendor 2">
+        <h2>Akanksha saloon</h2>
+        <p>Rating: ★★★★★</p>
+        <p>Price: $150 - $300</p>
+        <p>Location: Ramgarh</p>
+    </div>
+    <div class="vendor">
+        <img src="5555.jpg" alt="Vendor 3">
+        <h2>Mona Saloon</h2>
+        <p>Rating: ★★★☆☆</p>
+        <p>Price: $80 - $150</p>
+        <p>Location: Gaziabaad </p>
+    </div>
+    </div>
+    
+</body>
+    <script>let menu = document.querySelector('#menu-bar');
+let head = document.querySelector('.head .navbar');
+
+menu.onclick = () => {
+    head.classList.toggle('active');
+};
+
+window.onscroll = () => {
+    head.classList.remove('active');
+    if (window.scrollY > 60) {
+        document.querySelector('#menu-bar').classList.add('active');
+    } else {
+        document.querySelector('#menu-bar').classList.remove('active');
+    }
+}</script>
+</html>

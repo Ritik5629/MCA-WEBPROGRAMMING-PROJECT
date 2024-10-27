@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HAMIRPUR - Wedding Decoration Vendors</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+</head>
+<body style="background: rgb(64,246,149);
+background: linear-gradient(72deg, rgb(4, 219, 29) 10%, rgb(26, 166, 205) 47%, rgba(0,195,153,1) 100%);">
+ <header class="head">
+    <img src="import.jpeg" class="my-logo"></img>
+           
+            <nav class="navbar ">
+                 <a href="index.html" class="active">Home</a>
+                <a href="index.html#service">Service</a>
+                <a href="index.html#vendor">Vendors</a>
+                <a href="index.html#invite">Card Design</a>
+                <a href="index.html#contact">Contact Us</a>
+            </nav>
+            <div id="menu-bar"><i class="fas fa-bars"></i></div>
+        </header>
+        <h2 style="text-align: center; font-family:monospace;margin-top:8%;font-size: 2.5vw;"> Wedding Decoration - HAMIRPUR
+
+    </h2>
+    <div class="vendor">
+        <h2>Baassi Palace</h2>
+        <img src="wedding stage decoration (1).jpg" alt="Vendor 1">
+        <p>Location: <span class="location">Badu</span></p>
+        <p>Price: <span class="price">$5000 - $8000</span></p>
+    </div>
+    <div class="vendor">
+        <h2 style>Chopra wedding hall</h2>
+        <img src="wedding1 (1).png" alt="Vendor 2">
+        <p>Location: <span class="location">Anu</span></p>
+        <p>Price: <span class="price">$3000 - $7500</span></p>
+    </div>
+    <div class="vendor">
+        <h2>HHH- Hotel Heera Hights</h2>
+        <img src="weddinng3 (1).jpeg" alt="Vendor 3">
+        <p>Location: <span class="location">Hiranagar</span></p>
+        <p>Price: <span class="price">$7500 - $10000</span></p>
+    </div>
+</body>
+    <script>
+let menu = document.querySelector('#menu-bar');
+let head = document.querySelector('.head .navbar');
+
+menu.onclick = () => {
+    head.classList.toggle('active');
+};
+
+window.onscroll = () => {
+    head.classList.remove('active');
+    if (window.scrollY > 60) {
+        document.querySelector('#menu-bar').classList.add('active');
+    } else {
+        document.querySelector('#menu-bar').classList.remove('active');
+    }
+}</script>
+</html>
